@@ -1,0 +1,55 @@
+<mat-card>
+    <div class="transaction-box">
+        <button routerLink="/cadastro" mat-flat-button>Cadastrar nova Transação</button>
+        <div class="input-box">
+            <mat-form-field>
+                <mat-label>Procurar</mat-label>
+                <input matInput type="text" placeholder="Por qual transação está procurando?" (input)="search($event)">
+            </mat-form-field>
+            
+        </div>
+    </div>
+    
+    <table mat-table [dataSource]="transactions" class="mat-elevation-z8">
+      
+    
+        <ng-container matColumnDef="Descrição">
+          <th mat-header-cell *matHeaderCellDef> Descrição </th>
+          <td mat-cell *matCellDef="let transaction"> {{transaction.description}} </td>
+        </ng-container>
+      
+       
+        <ng-container matColumnDef="Quantia">
+          <th mat-header-cell *matHeaderCellDef> Quantia </th>
+          <td mat-cell *matCellDef="let transaction"> {{transaction.amount}} </td>
+        </ng-container>
+      
+        
+        <ng-container matColumnDef="Data">
+          <th mat-header-cell *matHeaderCellDef> Data </th>
+          <td mat-cell *matCellDef="let transaction"> {{transaction.date}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="Ações">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let transaction"> 
+    
+            <button routerLink="/editar/{{transaction.id}}" mat-flat-button>Editar</button>
+            <button routerLink="/detalhes/{{transaction.id}}" mat-stroked-button>Detalhes</button>
+    
+          </td>
+        </ng-container>
+    
+        <ng-container matColumnDef="Excluir">
+            <th mat-header-cell *matHeaderCellDef></th>
+            <td mat-cell *matCellDef="let transaction">
+    
+                <button mat-flat-button (click)="OpenDialog(transaction.id)">Excluir</button>
+    
+            </td>
+          </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="columns"></tr>
+        <tr mat-row *matRowDef="let row; columns: columns;"></tr>
+      </table>
+</mat-card>

@@ -1,0 +1,37 @@
+<mat-card>
+    <div>
+        <h1>Detalhes Transações</h1>
+    </div>
+    
+    <div *ngIf="transaction">
+        <form>
+            
+            <div class="input-box">
+                <mat-form-field>
+                    <mat-label>Descrição</mat-label>
+                    <input matInput type="text" value="{{transaction.description}}" disabled>
+                </mat-form-field>
+            </div>
+    
+            <div class="input-box">
+                <mat-form-field>
+                    <mat-label>Quantia</mat-label>
+                    <input matInput type="text" value="{{transaction.amount}}" disabled>
+                </mat-form-field>
+            </div>
+    
+            <div class="input-box">
+                <mat-form-field>
+                    <mat-label>Data</mat-label>
+                    <input matInput type="text" value="{{transaction.date}}" disabled>
+                </mat-form-field>
+                
+            </div>
+    
+            <div class="btn-box">
+                <button routerLink="/home" mat-stroked-button>Voltar</button>
+                <button routerLink="/dashboard" mat-stroked-button>dashboard</button>
+            </div>
+        </form>
+    </div>
+</mat-card>

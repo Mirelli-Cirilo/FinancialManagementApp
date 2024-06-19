@@ -1,0 +1,677 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FinancialManagementApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FinancialManagementApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\chart.cjs",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\chart.cjs"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\chart.cjs.map",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\chart.cjs.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\chart.js",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\chart.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\chart.js.map",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\chart.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\chart.umd.js",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\chart.umd.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\chart.umd.js.map",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\chart.umd.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\chunks\\helpers.segment.cjs",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\chunks\\helpers.segment.cjs"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\chunks\\helpers.segment.cjs.map",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\chunks\\helpers.segment.cjs.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\chunks\\helpers.segment.js",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\chunks\\helpers.segment.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\chunks\\helpers.segment.js.map",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\chunks\\helpers.segment.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\controllers\\controller.bar.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\controllers\\controller.bar.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\controllers\\controller.bubble.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\controllers\\controller.bubble.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\controllers\\controller.doughnut.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\controllers\\controller.doughnut.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\controllers\\controller.line.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\controllers\\controller.line.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\controllers\\controller.pie.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\controllers\\controller.pie.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\controllers\\controller.polarArea.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\controllers\\controller.polarArea.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\controllers\\controller.radar.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\controllers\\controller.radar.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\controllers\\controller.scatter.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\controllers\\controller.scatter.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\controllers\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\controllers\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.adapters.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.adapters.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.animation.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.animation.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.animations.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.animations.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.animations.defaults.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.animations.defaults.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.animator.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.animator.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.config.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.config.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.controller.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.controller.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.datasetController.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.datasetController.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.defaults.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.defaults.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.element.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.element.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.interaction.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.interaction.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.layouts.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.layouts.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.layouts.defaults.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.layouts.defaults.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.plugins.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.plugins.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.registry.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.registry.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.scale.autoskip.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.scale.autoskip.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.scale.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.scale.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.scale.defaults.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.scale.defaults.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.ticks.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.ticks.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\core.typedRegistry.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\core.typedRegistry.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\core\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\core\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\elements\\element.arc.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\elements\\element.arc.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\elements\\element.bar.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\elements\\element.bar.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\elements\\element.line.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\elements\\element.line.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\elements\\element.point.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\elements\\element.point.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\elements\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\elements\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers.cjs",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers.cjs"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers.cjs.map",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers.cjs.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers.js",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers.js.map",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.canvas.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.canvas.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.collection.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.collection.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.color.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.color.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.config.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.config.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.config.types.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.config.types.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.core.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.core.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.curve.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.curve.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.dom.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.dom.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.easing.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.easing.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.extras.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.extras.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.interpolation.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.interpolation.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.intl.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.intl.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.math.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.math.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.options.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.options.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.rtl.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.rtl.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\helpers.segment.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\helpers.segment.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\helpers\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\helpers\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\index.umd.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\index.umd.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\platform\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\platform\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\platform\\platform.base.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\platform\\platform.base.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\platform\\platform.basic.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\platform\\platform.basic.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\platform\\platform.dom.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\platform\\platform.dom.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.colors.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.colors.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.decimation.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.decimation.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.filler\\filler.drawing.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.filler\\filler.drawing.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.filler\\filler.helper.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.filler\\filler.helper.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.filler\\filler.options.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.filler\\filler.options.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.filler\\filler.segment.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.filler\\filler.segment.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.filler\\filler.target.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.filler\\filler.target.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.filler\\filler.target.stack.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.filler\\filler.target.stack.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.filler\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.filler\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.filler\\simpleArc.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.filler\\simpleArc.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.legend.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.legend.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.subtitle.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.subtitle.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.title.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.title.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\plugins\\plugin.tooltip.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\plugins\\plugin.tooltip.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\scales\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\scales\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\scales\\scale.category.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\scales\\scale.category.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\scales\\scale.linear.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\scales\\scale.linear.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\scales\\scale.linearbase.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\scales\\scale.linearbase.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\scales\\scale.logarithmic.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\scales\\scale.logarithmic.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\scales\\scale.radialLinear.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\scales\\scale.radialLinear.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\scales\\scale.time.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\scales\\scale.time.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\scales\\scale.timeseries.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\scales\\scale.timeseries.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\types.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\types.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\types\\animation.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\types\\animation.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\types\\basic.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\types\\basic.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\types\\color.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\types\\color.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\types\\geometric.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\types\\geometric.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\types\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\types\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\types\\layout.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\types\\layout.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\chart.js\\types\\utils.d.ts",
+      "PackagePath": "staticwebassets\\lib\\chart.js\\types\\utils.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FinancialManagementApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FinancialManagementApp.props",
+      "PackagePath": "build\\FinancialManagementApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FinancialManagementApp.props",
+      "PackagePath": "buildMultiTargeting\\FinancialManagementApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FinancialManagementApp.props",
+      "PackagePath": "buildTransitive\\FinancialManagementApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

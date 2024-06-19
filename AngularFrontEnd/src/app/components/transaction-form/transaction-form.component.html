@@ -1,0 +1,34 @@
+<mat-card >
+    <h1>{{btnTitulo}}</h1>
+
+    <form [formGroup]="transactionForm" (ngSubmit)="submit()" #formDit="ngForm">
+        <input type="hidden" value="" formControlName="id">
+
+        
+        <div class="input-box">
+            <mat-form-field>
+                <mat-label>Descrição</mat-label>
+                <input matInput type="text" placeholder="Descrição da transação:" formControlName="description" required>
+            </mat-form-field>
+        </div>
+
+        <div class="input-box">
+            <mat-form-field>
+                <mat-label>Quantidade</mat-label>
+                <input matInput type="number" placeholder="Quantidade gasta" formControlName="amount" required>
+            </mat-form-field>
+        </div>
+
+        <div class="input-box">
+            <mat-form-field>
+                <mat-label>Data</mat-label>
+                <input matInput type="date" placeholder="Data da transação:" formControlName="date" required>
+            </mat-form-field>
+        </div>
+
+        <div class="btn-box">
+            <button type="submit" [disabled]="!transactionForm.valid" mat-flat-button>{{btnAcao}}</button>
+            <button routerLink="/home" mat-stroked-button>Voltar</button>
+        </div>
+    </form>
+</mat-card>

@@ -1,0 +1,53 @@
+@{
+    ViewData["Title"] = "Dashboard Financeiro";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div>
+    <canvas id="financialChart" width="400" height="200"></canvas>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('/Dashboard/GetTransactionData')
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);  // Log para verificar a estrutura dos dados
+                    var ctx = document.getElementById('financialChart').getContext('2d');
+                    
+                    // Mapeie os dados para obter labels e valores
+                    var labels = data.map(item => new Date(item.date).toLocaleDateString());
+                    var values = data.map(item => item.totalAmount);
+                    
+                    console.log(labels, values);  // Log para verificar se os dados estão corretos
+
+                    // Criação do gráfico
+                    var chart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: labels,
+                            datasets: [{
+                                label: 'Total de Transações',
+                                data: values,
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                })
+                .catch(error => {
+                    console.error('Erro ao buscar os dados:', error);
+                });
+        });
+    </script>
+}

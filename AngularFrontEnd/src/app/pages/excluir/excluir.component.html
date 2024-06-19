@@ -1,0 +1,20 @@
+<mat-card>
+    <div *ngIf="transaction">
+        <h1 style="text-align: center;">Deseja confirmar a exclusão?</h1>
+        <div>
+            <h2>Descrição:</h2>
+            <p>{{transaction.description}}</p>
+    
+            <h2>Quantia:</h2>
+            <p>{{transaction.amount}}</p>
+    
+            <h2>Data:</h2>
+            <p>{{transaction.date}}</p>
+        </div>
+    
+        <div>
+            <button (click)="Excluir()" mat-flat-button>Confirmar Exclusão</button>
+            <button (click)="Voltar()" mat-stroked-button>Voltar</button>
+        </div>
+    </div>
+</mat-card>
