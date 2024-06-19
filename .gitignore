@@ -1,0 +1,8 @@
+bin/
+obj/
+*.user
+*.suo
+*.dbmdl
+*.jfm
+*.pdb
+.vscode/

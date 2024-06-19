@@ -281,3 +281,4 @@ C:\Users\mirel\Financeiro\FinancialManagementApp\bin\Debug\net8.0\AngularFrontEn
 C:\Users\mirel\Financeiro\FinancialManagementApp\bin\Debug\net8.0\AngularFrontEnd\tsconfig.app.json
 C:\Users\mirel\Financeiro\FinancialManagementApp\bin\Debug\net8.0\AngularFrontEnd\tsconfig.json
 C:\Users\mirel\Financeiro\FinancialManagementApp\bin\Debug\net8.0\AngularFrontEnd\tsconfig.spec.json
+C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\FinancialManagementApp.sourcelink.json
