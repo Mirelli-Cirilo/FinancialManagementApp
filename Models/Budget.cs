@@ -9,5 +9,5 @@ public class Budget
     public string Category { get; set; }
     public decimal Limit{ get; set; }
     public string UserId { get; set; }
-    public IdentityUser User { get; set; }
+    public ApplicationUser User { get; set; }
 }

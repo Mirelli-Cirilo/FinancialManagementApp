@@ -44,7 +44,6 @@ Swagger para documentação da API.
 git clone https://github.com/Mirelli-Cirilo/FinancialManagementApp.git
 cd FinancialManagementApp
 
-cd backend
 
 - Restaure as dependências e compile o projeto
 dotnet restore

@@ -1,0 +1,19 @@
+<mat-card>
+    <div>
+        <div class="container d-flex justify-content-center align-items-center mt-4">
+            <div style="width: 50%">
+                <form (ngSubmit)="onSubmit()" class="mb-4">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" [(ngModel)]="user.email" class="form-control" required>
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" [(ngModel)]="user.password" class="form-control" required>
+                    </div>
+                    <button class="btn btn-primary mt-2" type="submit">Register</button>
+                </form>
+            </div> 
+        </div>   
+    </div>    
+</mat-card>

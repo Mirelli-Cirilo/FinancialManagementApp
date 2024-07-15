@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthService} from "../../services/auth.service";
+import { HttpClient} from '@angular/common/http';
 import {LoginRequest} from "../../models/login-request";
-import { Router } from '@angular/router';
+
+import { Router} from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -9,27 +11,26 @@ import { Router } from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent implements OnInit {
+  invalidLogin?: boolean;
+  credentials: LoginRequest = {username:'', password:''};
+  constructor(private http: HttpClient, private router: Router) { }
+  
+  ngOnInit(): void { }
 
-  constructor(private authService: AuthService, private router: Router) { }
+  login(form: NgForm) {
+    const credentials = {
+      'username': form.value.username,
+      'password': form.value.password
+    }
 
-  ngOnInit(): void {
-    this.isLoggedIn();
-  }
-
-  credentials: LoginRequest = {
-    email: '',
-    password: ''
-  };
-
-  isLoggedIn() {
-    return this.authService.isLoggedIn();
-  }
-
-  login() {
-    this.authService.login(this.credentials)
-      .subscribe(() => {
-        console.log('Login successful');
-        this.router.navigate(['/home']);
-      })
+    this.http.post("https://localhost:5122/api/Auth/login", credentials)
+    .subscribe(response => {
+      const token = (<any>response).token;
+      localStorage.setItem('jwt', token); 
+      this.invalidLogin = false; 
+      this.router.navigate(['/home']);
+    }, err => { 
+        this.invalidLogin = true;
+    })
   }
 }

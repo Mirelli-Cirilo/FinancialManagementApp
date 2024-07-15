@@ -5,4 +5,5 @@ obj/
 *.dbmdl
 *.jfm
 *.pdb
+/node_modules/
 .vscode/

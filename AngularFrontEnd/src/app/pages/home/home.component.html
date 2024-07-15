@@ -1,6 +1,8 @@
 <mat-card>
     <div class="transaction-box">
         <button routerLink="/cadastro" mat-flat-button>Cadastrar nova Transação</button>
+        <button (click)="enable2Fa()" class="btn btn-primary mt-2">Habilitar 2FA</button>
+        
         <div class="input-box">
             <mat-form-field>
                 <mat-label>Procurar</mat-label>
