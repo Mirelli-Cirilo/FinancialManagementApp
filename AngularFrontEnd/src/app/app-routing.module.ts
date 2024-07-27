@@ -8,8 +8,8 @@ import { DetailsComponent } from './pages/details/details.component';
 import { ExcluirComponent } from './pages/excluir/excluir.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { RegisterComponent } from './components/register/register.component';
-import { Enable2faComponent } from './components/enable2fa/enable2fa.component';
 import { AuthGuard } from './guardh/auth-guard.service';
+import { TwoFactorAuthComponent } from './components/two-factor-auth/two-factor-auth.component';
 
 
 
@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'detalhes/:id', component: DetailsComponent},
   { path: 'excluir/:id', component: ExcluirComponent},
   { path: 'dashboard', component: DashboardComponent},
-  { path: 'enable2Fa', component: Enable2faComponent},
+  { path: 'twoFactor', component: TwoFactorAuthComponent}
 ];
 
 @NgModule({

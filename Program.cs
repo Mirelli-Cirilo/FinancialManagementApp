@@ -4,11 +4,10 @@ using FinancialManagementApp.Services.Interfaces;
 using FinancialManagementApp.Services;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Authentication.BearerToken;
 using Swashbuckle.AspNetCore.Filters;
 using FinancialManagementApp.Models;
 using FinancialNanagementApp.Services;
-using FinancialManagementApp.JwtFeatures;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -16,27 +15,10 @@ using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.WebHost.ConfigureKestrel(options =>
-{
-    options.ListenLocalhost(5122, listenOptions =>
-    {
-        listenOptions.UseHttps();  // Usar HTTPS na porta 5122
-    });
-});
-
 builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen( options => {
-    options.AddSecurityDefinition("jwt", new OpenApiSecurityScheme
-    {
-        In = ParameterLocation.Header,
-        Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey
-    });
-
-    options.OperationFilter<SecurityRequirementsOperationFilter>();
-});
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(opt =>
 {
@@ -56,10 +38,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddIdentityApiEndpoints<ApplicationUser>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-builder.Services.AddAuthorization();
-
 // Add services to the container
-builder.Services.AddControllers();
 
 builder.Services.AddAuthentication(opt => {
     opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -73,17 +52,19 @@ builder.Services.AddAuthentication(opt => {
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = "https://localhost:5122",
-            ValidAudience = "https://localhost:5122",
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superSecretKey@34578965471245793658855969685742"))
+            ValidIssuer = "https://localhost:5001",
+            ValidAudience = "https://localhost:5001",
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superAddingMoreBitsSecretKey@345"))
         };
     });
+
+builder.Services.AddControllers();
 
 // Register application services
 builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddScoped<IBudgetService, BudgetService>();
 builder.Services.AddScoped<ITotpAuthenticator, TotpAuthenticator>();
-builder.Services.AddScoped<JwtHandler>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -100,9 +81,9 @@ if (!app.Environment.IsDevelopment())
 
 
 app.MapIdentityApi<ApplicationUser>();
-app.UseHttpsRedirection();
+
 app.UseCors("CorsPolicy");
-app.UseRouting();
+app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

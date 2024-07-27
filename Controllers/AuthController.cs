@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Identity;
 using System.Threading.Tasks;
 using FinancialManagementApp.Models;
 using FinancialManagementApp.Services;
-using FinancialManagementApp.JwtFeatures;
 using System.Security.Claims;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -27,9 +26,9 @@ public class AuthController : ControllerBase
     private readonly IConfiguration _configuration;
     private readonly ILogger<AuthController> _logger;
     private readonly IMapper _mapper;
-    private readonly JwtHandler _jwtHandler;
+   
 
-    public AuthController(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager, ITotpAuthenticator totpAuthenticator,IConfiguration configuration, ILogger<AuthController> logger, IMapper mapper, JwtHandler jwtHandler)
+    public AuthController(SignInManager<ApplicationUser> signInManager, UserManager<ApplicationUser> userManager, ITotpAuthenticator totpAuthenticator,IConfiguration configuration, ILogger<AuthController> logger, IMapper mapper)
     {
         _signInManager = signInManager;
         _userManager = userManager;
@@ -37,7 +36,6 @@ public class AuthController : ControllerBase
         _configuration = configuration;
         _logger = logger;
         _mapper = mapper;
-        _jwtHandler = jwtHandler;
     }
 
     // [HttpPost("register")]
@@ -70,15 +68,35 @@ public class AuthController : ControllerBase
     {
         var user = await _userManager.FindByNameAsync(model.UserName);
         if (user == null || !await _userManager.CheckPasswordAsync(user, model.Password))
-            return Unauthorized(new LoginResponseDto { ErrorMessage = "Invalid Authentication" });
+            return Unauthorized(new { ErrorMessage = "Invalid Authentication" });
 
-        var signingCredentials = _jwtHandler.GetSigningCredentials();
-        var claims = _jwtHandler.GetClaims(user);
-        var tokenOptions = _jwtHandler.GenerateTokenOptions(signingCredentials, claims);
-        var token = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
-        _logger.LogInformation("Attempting to setup 2FA for user: {User}", User.Identity.Name);
-        _logger.LogInformation("User {UserName} logged in successfully", user.UserName);
-        return Ok(new LoginResponseDto { IsAuthSuccessful = true, Token = token });
+        if (user.TwoFactorEnabled)
+        {
+            // Retorne um indicador que a autenticação de dois fatores é necessária
+            return Ok(new { RequiresTwoFactor = true });
+        }    
+
+        var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Name, user.UserName),
+            new Claim(ClaimTypes.Email, user.Email),
+            new Claim(ClaimTypes.NameIdentifier, user.Id)
+        };
+        
+        var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superAddingMoreBitsSecretKey@345"));
+        var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
+        var tokeOptions = new JwtSecurityToken(
+            issuer: "https://localhost:5001",
+            audience: "https://localhost:5001",
+            claims: claims,
+            expires: DateTime.Now.AddMinutes(5),
+            signingCredentials: signinCredentials
+        );
+        var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
+
+        // Talvez fazer o login da parte do identity, alem de enviar o token
+        return Ok(new { Token = tokenString });
+        
     }
 
     //[AllowAnonymous]
@@ -109,74 +127,7 @@ public class AuthController : ControllerBase
 //     return Unauthorized("Login inválido.");
 // }
 
-    [Authorize]
-    [HttpGet("enable")]
-    public async Task<IActionResult> EnableTwoFactor()
-    {
-        
-        var user = await _userManager.GetUserAsync(User);
-        if (user == null)
-        {
-            return Unauthorized();
-        }
-
-        user.TwoFactorEnabled = true;
-        
-
-        await _userManager.UpdateAsync(user);
-        // Redirect to success page 
-        return Ok("You have Sucessfully Enabled Two Factor Authentication");
-    }
-
-    [Authorize]
-    [HttpGet("setup")]
-    public async Task<IActionResult> SetupTwoFactor()
-    {
-        _logger.LogInformation("Attempting to setup 2FA for user: {User}", User.Identity.Name);
-        var user = await _userManager.GetUserAsync(User);
-        if (user == null)
-        {
-
-            _logger.LogWarning("User not found: {User}", User.Identity.Name);
-            return Unauthorized();
-        }
-
-        // Generate a secret key for the user
-        var secretKey = _totpAuthenticator.GenerateSecret();
-
-        // Save the secret key to the user
-        user.TwoFactorSecret = secretKey;
-        await _userManager.UpdateAsync(user);
-
-        // Generate QR code URI
-        var qrCodeUri = _totpAuthenticator.GenerateSetupCode(user.Email, secretKey);
-
-        await _userManager.UpdateAsync(user);
-
-        return Ok(new { qrCodeUri });
-    }
-
-    [HttpPost("verify-2fa")]
-    public async Task<IActionResult> VerifyTwoFactor([FromBody] VerifyTwoFactorDto model)
-    {
-        var user = await _userManager.FindByNameAsync(model.Email);
-        if (user == null)
-        {
-            return Unauthorized();
-        }
-
-        var isValid = _totpAuthenticator.ValidateCode(user.TwoFactorSecret, model.Code);
-        if (isValid)
-        {
-            // Sign the user in after successful 2FA verification
-            user.TwoFactorEnabled = true;
-            await _userManager.UpdateAsync(user);
-            await _signInManager.SignInAsync(user, isPersistent: false);
-            return Ok(new { Message = "Two-factor authentication successful." });
-        }
-
-        return BadRequest(new { Message = "Invalid code." });
-    }
+    
 
     
 }

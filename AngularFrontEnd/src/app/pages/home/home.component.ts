@@ -3,8 +3,8 @@ import { TransactionService } from '../../services/transaction.service';
 import { Transaction } from '../../models/transaction';
 import { MatDialog } from '@angular/material/dialog';
 import { ExcluirComponent } from '../excluir/excluir.component';
-import { AuthService } from "../../services/auth.service";
 import { JwtHelperService } from '@auth0/angular-jwt';
+import { TwoFactorAuthService } from '../../services/twoFactorAuth.service';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   columns = ['Descrição', 'Quantia', 'Data', 'Ações', 'Excluir']
 
   requiresTwoFactor: boolean = false;
-  constructor(private transactionService: TransactionService, public dialog: MatDialog, private authService: AuthService, private jwtHelper: JwtHelperService) {
+  constructor(private transactionService: TransactionService, public dialog: MatDialog, private twofactorService: TwoFactorAuthService, private jwtHelper: JwtHelperService) {
     
   }
 
@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit {
 
   enable2Fa() {
     console.log('Token:', localStorage.getItem('jwt'));
-    this.authService.enable2Fa().subscribe(response => {
+    this.twofactorService.enable2Fa().subscribe(response => {
       this.requiresTwoFactor = true;
       console.log('Two Factor enabled');
     }, error => {

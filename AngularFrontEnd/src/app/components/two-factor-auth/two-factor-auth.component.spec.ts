@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Enable2faComponent } from './enable2fa.component';
+import { TwoFactorAuthComponent } from './two-factor-auth.component';
 
-describe('Enable2faComponent', () => {
-  let component: Enable2faComponent;
-  let fixture: ComponentFixture<Enable2faComponent>;
+describe('TwoFactorAuthComponent', () => {
+  let component: TwoFactorAuthComponent;
+  let fixture: ComponentFixture<TwoFactorAuthComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [Enable2faComponent]
+      declarations: [TwoFactorAuthComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Enable2faComponent);
+    fixture = TestBed.createComponent(TwoFactorAuthComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

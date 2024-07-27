@@ -12,7 +12,6 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { TransactionFormComponent } from './components/transaction-form/transaction-form.component';
 import { EditarComponent } from './pages/editar/editar.component';
 import { DetailsComponent } from './pages/details/details.component';
-import { Enable2faComponent } from './components/enable2fa/enable2fa.component';
 import { ExcluirComponent } from './pages/excluir/excluir.component';
 
 
@@ -28,6 +27,7 @@ import { RegisterComponent } from './components/register/register.component'
 import { AuthGuard } from './guardh/auth-guard.service';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { JwtInterceptor } from './interceptors/jwt-interceptor';
+import { TwoFactorAuthComponent } from './components/two-factor-auth/two-factor-auth.component';
 
 
 export function tokenGetter() { 
@@ -46,7 +46,7 @@ export function tokenGetter() {
     ExcluirComponent,
     DashboardComponent,
     RegisterComponent,
-    Enable2faComponent
+    TwoFactorAuthComponent,
 
   ],
   imports: [

@@ -3,24 +3,35 @@ using FinancialManagementApp.Models;
 using FinancialManagementApp.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using FinancialManagementApp.DTOs;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace FinancialManagementApp.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class TransactionController : ControllerBase
 {
     private readonly ITransactionService _transactionService;
+    private readonly UserManager<ApplicationUser> _userManager;
 
-    public TransactionController(ITransactionService transactionService)
+    public TransactionController(ITransactionService transactionService, UserManager<ApplicationUser> userManager)
     {
         _transactionService = transactionService;
+        _userManager = userManager;
     }
     
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Transaction>>> GetTransactions()
     {
-        var transactions = await _transactionService.GetTransactionsAsync();
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        if (userId == null)
+        {
+            return Unauthorized("User is not logged in");
+        }
+
+        var transactions = await _transactionService.GetTransactionsAsync(userId);
         return Ok(transactions);
     }
 
@@ -29,7 +40,8 @@ public class TransactionController : ControllerBase
     {
         try
             {
-                var userClaims = User;
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                var userClaims = await _userManager.FindByIdAsync(userId);
                 var transaction = await _transactionService.AddTransactionAsync(transactionDto, userClaims);
                 return CreatedAtAction(nameof(GetTransactionById), new { id = transaction.Id }, transaction);
             }

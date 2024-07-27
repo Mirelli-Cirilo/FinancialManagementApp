@@ -1,9 +1,9 @@
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {LoginRequest} from "../models/login-request";
-import {LoginResponse} from "../models/login-response";
 import { Observable, map } from 'rxjs';
 import { Register } from '../models/register';
+import { Router } from '@angular/router';
 
 
 @Injectable({
@@ -11,31 +11,19 @@ import { Register } from '../models/register';
 })
 export class AuthService {
 
-  private apiUrl = 'https://localhost:5122/';
+  private apiUrl = 'https://localhost:5001/';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private router: Router) { }
 
- 
-
- 
-
-  enable2Fa(): Observable<any> {
-    const token = localStorage.getItem('jwt'); // Certifique-se de ter o token de autenticação
-    if (!token) {
-      throw new Error('Token de autenticação não encontrado.');
-    }
-    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    return this.httpClient.get(`https://localhost:5122/api/Auth/enable`, { headers  });
-  }
-
-  setupTwoFactor(): Observable<any> {
-    const token = localStorage.getItem('jwt');
-    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
-    return this.httpClient.get(`${this.apiUrl}api/Auth/setup`, { headers });
-  }
-
-  verifyTwoFactor( code: string): Observable<any> {
-    return this.httpClient.post(`${this.apiUrl}api/Auth/verify-2fa`, {code});
+  login(credentials: LoginRequest): Observable<any> {
+    return this.httpClient.post<any>(`${this.apiUrl}api/Auth/login`, credentials)
+      .pipe(map(response => {
+        localStorage.setItem('UserName', credentials.username); 
+        if (response.token) {
+          localStorage.setItem('jwt', response.token);
+        }
+        return response;
+      }));
   }
 
   logout() {

@@ -5,6 +5,8 @@ using FinancialManagementApp.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using FinancialManagementApp.DTOs;
+using Microsoft.AspNetCore.Authorization;
+using System.Threading.Tasks;
 
 namespace FinancialManagementApp.Services;
 
@@ -19,10 +21,11 @@ public class TransactionService : ITransactionService
         _userManager = userManager;
     }
 
-    public async Task<Transaction> AddTransactionAsync(TransactionDto transactionDto, ClaimsPrincipal userClaims)
+    public async Task<Transaction> AddTransactionAsync(TransactionDto transactionDto, ApplicationUser user)
     {
-        var user = await _userManager.GetUserAsync(userClaims);
-            if (user == null)
+
+        var userC = await _userManager.FindByIdAsync(user.Id);
+            if (userC == null)
             {
                 throw new UnauthorizedAccessException("User is not authorized.");
             }
@@ -77,9 +80,11 @@ public class TransactionService : ITransactionService
         };
     }
 
-    public async Task<IEnumerable<Transaction>> GetTransactionsAsync()
+    public async Task<IEnumerable<Transaction>> GetTransactionsAsync(string userId)
     {
-        return await _context.Transactions.ToListAsync();
+        return await _context.Transactions
+                             .Where(t => t.UserId == userId)
+                             .ToListAsync();
     }
 
     public async Task UpdateTransactionAsync(Transaction transaction)
