@@ -1,0 +1,63 @@
+<div *ngIf="budgetExist; else noBudget">
+  <div *ngIf="budgets.length > 0; else noBudgetsList">
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <app-create-budget></app-create-budget>
+        </div>
+
+        <div *ngFor="let budget of budgets" class="col-12 col-md-6 mb-4 mt-3">
+          <div class="budget-card">
+            <div class="card shadow-sm">
+              <a [routerLink]="['/dashboard/transactions', budget.id]" style="text-decoration: none; color: inherit;">
+                <div class="card-body d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 class="card-title mb-2">{{ budget.title }}</h5>
+                    <p class="card-text">Transações: {{ budget.transactionCount }}</p>
+                  </div>
+                  <div>
+                    <h5 class="card-title text-end mt-5">Total: R$ {{ budget.initialAmount | number:'1.2-2' }}</h5>
+                  </div>
+                </div>
+
+                <!-- Linha adicionada para mostrar os valores -->
+                <div class="d-flex justify-content-between px-3">
+                  <span>Total gasto: R$ {{ budget.amountSpent | number:'1.2-2' }}</span>
+                  <span>Restante: R$ {{ (budget.initialAmount - budget.amountSpent) | number:'1.2-2' }}</span>
+                </div>
+
+                <div class="progress mt-2 mb-3 m-2" style="height: 10px;">
+                  <div
+                      class="progress-bar bg-warning"
+                      role="progressbar"
+                      [style.width.%]="calculateProgress(budget.amountSpent, budget.initialAmount)"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      [attr.aria-valuenow]="calculateProgress(budget.amountSpent, budget.initialAmount)">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #noBudgetsList>
+    <p>Não há orçamentos disponíveis.</p>
+  </ng-template>
+</div>
+
+<ng-template #noBudget>
+  <!-- Conteúdo ou componente para quando o orçamento não existir -->
+  <div style="margin-left: 3rem;" class="p-3">
+    <h2 class="fw-bold">My Budgets</h2>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <app-create-budget></app-create-budget>
+      </div>
+      <div class="col-12 col-md-3"></div>
+      <div class="col-12 col-md-3"></div>
+    </div>
+  </div>
+</ng-template>

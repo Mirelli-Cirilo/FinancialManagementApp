@@ -1,0 +1,6 @@
+.custom-background {
+    background-color: rgb(255, 174, 0); /* Fundo amarelo */
+    color: white; /* Cor do ícone */
+    padding: 7px;
+    border-radius: 50%; /* Faz o fundo ficar circular */
+  }

@@ -2,61 +2,86 @@
 using FinancialManagementApp.Data;
 using FinancialManagementApp.Models;
 using FinancialManagementApp.Services.Interfaces;
-using Microsoft.AspNetCore.Identity;
-using System.Security.Claims;
 using FinancialManagementApp.DTOs;
-using Microsoft.AspNetCore.Authorization;
-using System.Threading.Tasks;
+
 
 namespace FinancialManagementApp.Services;
 
 public class TransactionService : ITransactionService
 {   
     private readonly ApplicationDbContext _context;
-    private readonly UserManager<ApplicationUser> _userManager;
 
-    public TransactionService(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+
+    public TransactionService(ApplicationDbContext context)
     {
         _context = context;
-        _userManager = userManager;
     }
 
-    public async Task<Transaction> AddTransactionAsync(TransactionDto transactionDto, ApplicationUser user)
+    public async Task<Transaction> AddTransactionAsync(TransactionDto transactionDto, string userId)
+{
+    if (userId == null)
     {
-
-        var userC = await _userManager.FindByIdAsync(user.Id);
-            if (userC == null)
-            {
-                throw new UnauthorizedAccessException("User is not authorized.");
-            }
-
-            var transaction = new Transaction
-            {
-                Id = 0,
-                Description = transactionDto.Description,
-                Amount = transactionDto.Amount,
-                Date = transactionDto.Date,
-                UserId = user.Id
-            };
-
-            _context.Transactions.Add(transaction);
-            await _context.SaveChangesAsync();
-            return transaction;
-            
-        
+        throw new UnauthorizedAccessException("User is not authorized.");
     }
+
+    var budget = _context.Budgets.FirstOrDefault(b => b.Id == transactionDto.BudgetId);
+
+    if (budget == null)
+    {
+        throw new KeyNotFoundException($"Budget with Id not found.");
+    }
+    
+    var transaction = new Transaction
+    {
+        Id = 0,
+        Title = transactionDto.Title,
+    
+        Amount = transactionDto.Amount,
+       
+        UserId = userId,
+        BudgetId = transactionDto.BudgetId,
+        Budget = budget
+    };
+
+    budget.Amount -= transactionDto.Amount; 
+   
+    if (budget.Amount < 0)
+    {
+        budget.Amount = 0;
+    }
+
+    try
+    {
+        _context.Transactions.Add(transaction);
+        await _context.SaveChangesAsync();
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Exception: {ex.Message}");
+        throw;
+    }
+
+    return transaction;
+}
 
     public async Task<bool> DeleteTransactionAsync(int id)
     {
         var transaction = await _context.Transactions.FindAsync(id);
+        
 
         if (transaction != null)
         {
-            _context.Transactions.Remove(transaction);
-            await _context.SaveChangesAsync();
-            return true;
+            var budget = await _context.Budgets.FindAsync(transaction.BudgetId);
+
+            if (budget != null)
+            {
+                budget.Amount += transaction.Amount;
+
+                _context.Transactions.Remove(transaction);
+                await _context.SaveChangesAsync();
+                return true;
+            }
         }
-        
         return false;
     }
 
@@ -71,29 +96,34 @@ public class TransactionService : ITransactionService
 
         return new TransactionDto
         {
-            Id = transaction.Id,
-            Description = transaction.Description,
+            Id = transaction.Id,      
+            Title = transaction.Title,
             Amount = transaction.Amount,
-            Date = transaction.Date
-
-            
+            CreatedAt = transaction.createdAt
         };
     }
 
-    public async Task<IEnumerable<Transaction>> GetTransactionsAsync(string userId)
+    public async Task<IEnumerable<TransactionDto>> GetTransactionsAsync(string userId)
     {
-        return await _context.Transactions
-                             .Where(t => t.UserId == userId)
+        var transactions = await _context.Transactions
+                             .Where(t => t.UserId == userId).OrderByDescending(t => t.createdAt)
                              .ToListAsync();
+
+
+        var result = transactions.Select(t => new TransactionDto
+        {
+            Id = t.Id,
+            Title = t.Title,
+            Amount = t.Amount,
+            CreatedAt = t.createdAt,
+            BudgetId = t.BudgetId
+        });
+
+        return result;
+
     }
 
-    public async Task UpdateTransactionAsync(Transaction transaction)
-    {
-        
-            _context.Transactions.Update(transaction);
-            await _context.SaveChangesAsync();
 
-    }
 
     public async Task<bool> UpdateTransactionAsync(int id, TransactionDto transactionDto)
     {
@@ -103,9 +133,7 @@ public class TransactionService : ITransactionService
             return false;
         }
 
-        transaction.Description = transactionDto.Description;
         transaction.Amount = transactionDto.Amount;
-        transaction.Date = transactionDto.Date;
         
         _context.Transactions.Update(transaction);
         await _context.SaveChangesAsync();

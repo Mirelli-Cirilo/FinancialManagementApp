@@ -1,0 +1,39 @@
+<div>
+    <div class="bg-light mt-3 p-4 rounded d-flex flex-column align-items-center border border-2 border-dashed cursor-pointer hover-shadow" (click)="openModal()" style="cursor: pointer;">
+        <h2 class="display-4">+</h2>
+        <h2>Create Budget</h2>
+      </div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Create Budget</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Conteúdo do modal -->
+              <p>Here you can create your budget.</p>
+            </div>
+
+            <form #budgetForm="ngForm" (ngSubmit)="onSubmit(budgetForm)">
+              <mat-form-field class="custom-field" appearance="outline">
+                <mat-label>Titulo</mat-label>
+                <input matInput name="title" ngModel required placeholder="Ex. Aluguel" class="custom-input">
+              </mat-form-field>
+            
+              <mat-form-field class="custom-field" appearance="outline">
+                <mat-label>Quantia</mat-label>
+                <input matInput name="initialAmount" ngModel required type="number" placeholder="Ex. Quantia" class="custom-input">
+              </mat-form-field>
+            
+              <div class="modal-footer justify-content-start ms-3">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" [disabled]="budgetForm.invalid">Save changes</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+</div>

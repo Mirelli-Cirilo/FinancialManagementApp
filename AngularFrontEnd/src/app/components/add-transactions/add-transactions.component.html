@@ -1,0 +1,19 @@
+<div class="bg-light p-4 rounded border border-2">
+    <h2>Add transaction</h2>
+    <form #transactionForm="ngForm" (ngSubmit)="onSubmit(transactionForm)">
+        <mat-form-field class="custom-field" appearance="outline">
+            <mat-label>Titulo</mat-label>
+            <input matInput name="title" ngModel required placeholder="Ex. Aluguel" class="custom-input">
+          </mat-form-field>
+      
+        <mat-form-field class="custom-field" appearance="outline">
+          <mat-label>Quantia</mat-label>
+          <input matInput name="amount" ngModel required type="number" placeholder="Ex. Quantia" class="custom-input">
+        </mat-form-field>        
+      
+        <div class="modal-footer justify-content-start ms-3">
+          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary ms-4" [disabled]="transactionForm.invalid">Save changes</button>
+        </div>
+      </form>
+</div>

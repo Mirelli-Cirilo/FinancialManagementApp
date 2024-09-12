@@ -271,8 +271,6 @@ C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\FinancialManag
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\FinancialManagementApp.csproj.CoreCompileInputs.cache
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\FinancialManagementApp.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\FinancialManagementApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\FinancialManagementApp.RazorAssemblyInfo.cache
-C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\FinancialManagementApp.RazorAssemblyInfo.cs
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\FinancialManagementApp.sourcelink.json
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\staticwebassets.development.json
@@ -281,9 +279,7 @@ C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\staticwebasset
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FinancialManagementApp.props
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FinancialManagementApp.props
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\scopedcss\bundle\FinancialManagementApp.styles.css
-C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\scopedcss\projectbundle\FinancialManagementApp.bundle.scp.css
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\Financia.989977B5.Up2Date
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\FinancialManagementApp.dll
 C:\Users\mirel\Financeiro\FinancialManagementApp\obj\Debug\net8.0\refint\FinancialManagementApp.dll

@@ -1,6 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using FinancialManagementApp.Models;
 using FinancialManagementApp.Services.Interfaces;
+using System.Security.Claims;
+using FinancialManagementApp.Data;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using FinancialManagementApp.DTOs;
 
 namespace FinancialManagementApp.Controllers;
 
@@ -9,10 +14,20 @@ namespace FinancialManagementApp.Controllers;
 public class BudgetController : ControllerBase
 {
     private readonly IBudgetService _budgetService;
+    private readonly ApplicationDbContext _context;
 
-    public BudgetController(IBudgetService budgetService)
+    public BudgetController(IBudgetService budgetService, ApplicationDbContext context)
     {
         _budgetService = budgetService;
+        _context = context;
+    }
+
+    [HttpGet("budgetExist")]
+    public async Task<ActionResult<bool>> BudgetExist()
+    {
+        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        var budgetExist = await _context.Budgets.AnyAsync(b => b.UserId == userId);
+        return Ok(budgetExist);
     }
 
     [HttpGet]
@@ -22,12 +37,15 @@ public class BudgetController : ControllerBase
         return Ok(budgets);
     }
 
-    [HttpPost]
-    public async Task<ActionResult>CreateBudget(Budget budget)
-    {
-        await _budgetService.AddBudgetAsync(budget);
-        return CreatedAtAction(nameof(GetBudgetById), new{id = budget.Id}, budget);
-    }
+    [HttpPost("create")]
+    public async Task<ActionResult> CreateBudget([FromBody] Budget budget)
+{
+    // O UserId agora já faz parte do objeto budget enviado do front-end
+    var newBudget = await _budgetService.AddBudgetAsync(budget);
+
+    // Retorna o orçamento criado com o status 201 Created
+    return CreatedAtAction(nameof(GetBudgetById), new { id = newBudget.Id }, newBudget);
+}
 
     [HttpGet("{id}")]
     public async Task<ActionResult<Budget>> GetBudgetById(int id)
@@ -48,20 +66,14 @@ public class BudgetController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult>UpdateBudget(Budget budget, int id)
+    public async Task<ActionResult> UpdateBudget(int id, [FromBody] BudgetDetailsDto budget)
     {
         if (id != budget.Id)
         {
-            return BadRequest("Id Does not match");
+            return BadRequest("Id does not match");
         }
 
-        var existBudget = _budgetService.GetBudgetByIdAsync(id);
-        if (existBudget != null)
-        {
-            return NotFound("Budget not Found");
-        }
-
-        await _budgetService.UpdateBudgetAsync(budget);
+        await _budgetService.UpdateBudgetAsync(id, budget);
         return Ok();
     }
 }

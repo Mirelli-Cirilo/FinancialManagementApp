@@ -1,13 +1,13 @@
 ﻿using System;
-using Microsoft.AspNetCore.Identity;
-
 namespace FinancialManagementApp.Models;
 
 public class Budget
 {
     public int Id { get; set; }
-    public string Category { get; set; }
-    public decimal Limit{ get; set; }
-    public string UserId { get; set; }
-    public ApplicationUser User { get; set; }
+    public string Title { get; set; }
+    public decimal InitialAmount { get; set; }
+    public decimal Amount{ get; set; }
+    public string UserId{ get; set; }
+    public List<Transaction> Transactions { get; set; } = new List<Transaction>();
+    
 }

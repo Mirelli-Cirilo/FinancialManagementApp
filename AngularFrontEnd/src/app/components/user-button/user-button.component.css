@@ -1,0 +1,11 @@
+.no-underline {
+    
+    color: rgb(238, 205, 17); /* Caso deseje aplicar a cor */
+    font-weight: bold;
+    font-size: small;
+  }
+  
+  span:hover, span:focus {
+    color: rgb(247, 176, 24); /* Cor ao passar o mouse e ao focar no link */
+    text-decoration: none;
+  }

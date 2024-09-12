@@ -1,0 +1,31 @@
+a {
+    font-size: small;
+    text-decoration: none;
+    color: rgb(245, 191, 44);
+    font-weight: bold;
+}
+
+a:hover, a:focus {
+    color: rgb(240, 166, 7); /* Cor ao passar o mouse e ao focar no link */
+    text-decoration: none; /* Mantém a ausência de sublinhado ao passar o mouse e focar */
+  }
+
+/* Estilos específicos para o dropdown dentro do sidebar */
+.sidebar .user-button {
+    margin-bottom: 2rem; /* Ajusta o espaço abaixo do botão do usuário */
+    margin-top: 10rem; /* Ajusta o espaço acima do botão do usuário */
+  }
+  
+  .sidebar .user-button img {
+    border: 2px solid #000000; /* Exemplo: adicionar uma borda ao redor da imagem */
+  }
+  
+  /* Ajuste da posição do dropdown dentro do sidebar */
+  .sidebar .dropdown-menu {
+    transform: translateY(-70px); /* Ajusta a posição do dropdown se necessário */
+  }
+
+  .nav-item:hover {
+    background-color: #fce27a; /* Cor amarela */
+    cursor: pointer; /* Altera o cursor para indicar que o item é clicável */
+  }

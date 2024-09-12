@@ -1,12 +1,12 @@
 ﻿using FinancialManagementApp.Models;
+using FinancialManagementApp.DTOs;
 
 namespace FinancialManagementApp.Services.Interfaces;
-
 public interface IBudgetService 
 {
-    Task<IEnumerable<Budget>> GetBudgetsAsync();
-    Task<Budget> GetBudgetByIdAsync(int id);
-    Task AddBudgetAsync(Budget budget);
+    Task<IEnumerable<BudgetDetailsDto>> GetBudgetsAsync();
+    Task<BudgetDetailsDto> GetBudgetByIdAsync(int id);
+    Task<Budget> AddBudgetAsync(Budget budget);
     Task DeleteBudgetAsync(int id);
-    Task UpdateBudgetAsync(Budget budget);
+    Task<Budget> UpdateBudgetAsync(int Id, BudgetDetailsDto budget);
 }

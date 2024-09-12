@@ -2,16 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using FinancialManagementApp.Data;
 using FinancialManagementApp.Services.Interfaces;
 using FinancialManagementApp.Services;
-using Microsoft.OpenApi.Models;
-using Microsoft.AspNetCore.Identity;
-using Swashbuckle.AspNetCore.Filters;
-using FinancialManagementApp.Models;
-using FinancialNanagementApp.Services;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,40 +21,25 @@ builder.Services.AddCors(opt =>
     });
 });
 
-// Configure DbContext with SQLite
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Configure Identity
-builder.Services.AddIdentityApiEndpoints<ApplicationUser>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
-
-// Add services to the container
-
-builder.Services.AddAuthentication(opt => {
-    opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
+builder.Services.AddAuthentication(options =>
         {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = "https://localhost:5001",
-            ValidAudience = "https://localhost:5001",
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("superAddingMoreBitsSecretKey@345"))
-        };
-    });
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        }).AddJwtBearer(options =>
+        {
+            options.Authority = "https://dev-8zkc8t7vubcg2qoe.us.auth0.com/";
+            options.Audience = "https://financialapi.com";
+        });
+
+       
 
 builder.Services.AddControllers();
-
-// Register application services
 builder.Services.AddScoped<ITransactionService, TransactionService>();
 builder.Services.AddScoped<IBudgetService, BudgetService>();
-builder.Services.AddScoped<ITotpAuthenticator, TotpAuthenticator>();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
@@ -78,9 +54,6 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
-
-
-app.MapIdentityApi<ApplicationUser>();
 
 app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();

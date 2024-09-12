@@ -14,24 +14,24 @@ namespace FinancialManagementApp.Controllers;
 public class TransactionController : ControllerBase
 {
     private readonly ITransactionService _transactionService;
-    private readonly UserManager<ApplicationUser> _userManager;
+    
 
-    public TransactionController(ITransactionService transactionService, UserManager<ApplicationUser> userManager)
+    public TransactionController(ITransactionService transactionService)
     {
         _transactionService = transactionService;
-        _userManager = userManager;
+        
     }
     
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Transaction>>> GetTransactions()
     {
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        if (userId == null)
-        {
-            return Unauthorized("User is not logged in");
-        }
 
         var transactions = await _transactionService.GetTransactionsAsync(userId);
+        if (transactions == null)
+        {
+            return NotFound();
+        }
         return Ok(transactions);
     }
 
@@ -41,8 +41,8 @@ public class TransactionController : ControllerBase
         try
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                var userClaims = await _userManager.FindByIdAsync(userId);
-                var transaction = await _transactionService.AddTransactionAsync(transactionDto, userClaims);
+                
+                var transaction = await _transactionService.AddTransactionAsync(transactionDto, userId);
                 return CreatedAtAction(nameof(GetTransactionById), new { id = transaction.Id }, transaction);
             }
             catch (UnauthorizedAccessException)

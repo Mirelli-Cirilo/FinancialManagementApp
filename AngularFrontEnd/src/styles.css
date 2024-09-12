@@ -4,7 +4,8 @@ html, body {
  width: 100vw;   
  height: 100vh;
  font-size: 62.5%; 
- overflow: hidden;
+ overflow: auto;
+ overflow-x: hidden;
 }
 
 mat-card {
@@ -20,6 +21,7 @@ mat-card {
 
 mat-form-field {
     width: 100%;
+    height: auto;
 }
 
 .input-box{
@@ -36,3 +38,9 @@ mat-form-field {
 .btn-box button{
     width: 50%;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+  

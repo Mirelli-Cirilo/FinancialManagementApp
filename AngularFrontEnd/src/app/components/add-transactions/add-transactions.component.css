@@ -1,0 +1,43 @@
+::ng-deep .custom-field .mat-mdc-form-field-infix {
+    padding: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  
+  ::ng-deep .custom-input {
+    height: 30px !important;
+    line-height: 20px !important;
+    padding: 0 4px !important;
+    font-size: 12px !important;
+  }
+  
+  ::ng-deep .mat-mdc-text-field-wrapper {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+  }
+  
+  ::ng-deep .mdc-notched-outline__notch {
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: 0 !important;
+  }
+  
+  ::ng-deep .mdc-text-field {
+    height: auto !important;
+    padding: 0 !important;
+  }
+  
+  ::ng-deep .custom-field.mat-form-field-should-float .mat-mdc-form-field-flex .mdc-floating-label {
+    transform: translateY(-1.5rem) scale(0.75) !important;
+    width: auto !important;
+    left: 0 !important;
+  }
+
+  ::ng-deep .mat-form-field {
+    position: relative; /* Garante que o label será posicionado relativo à caixa */
+  }
+
+  ::ng-deep .mdc-floating-label {
+    margin-bottom: 6rem;
+  }

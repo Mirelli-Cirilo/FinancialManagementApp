@@ -1,0 +1,46 @@
+<div class=" container-fluid mt-3">
+    <h3 *ngIf="auth.user$ | async as user" class="fw-bold">Hello,  {{user.name}} <i class="fa-solid fa-sun" style="color: rgb(255, 224, 88);"></i></h3>
+    <p style="margin-top: -1rem;">Here's whats happening with your money</p>
+
+    <app-card-info></app-card-info>
+    <div class="container ">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <!-- Esta coluna ocupará 100% da largura em telas pequenas e 2/3 (col-md-8) da largura em telas médias e maiores -->
+            <div>
+                <canvas #myChart></canvas>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <h4>Budgets</h4>
+            <ul class="list-group">
+              <!-- Loop para exibir os budgets -->
+              <li *ngFor="let budget of budgets" class="list-group-item d-flex justify-content-between align-items-center">
+                {{ budget.title }}
+                <span class="badge bg-warning rounded-pill">{{ budget.initialAmount | currency }}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="mt-4">
+      <h2>Transactions</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Budget</th>
+            <th>Amount</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let transaction of transactions">
+            <td>{{ getBudgetTitle(transaction.budgetId) }}</td>
+            <td>{{ transaction.amount | currency }}</td>
+            <td>{{ transaction.createdAt | date:'dd/MM/yyyy' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

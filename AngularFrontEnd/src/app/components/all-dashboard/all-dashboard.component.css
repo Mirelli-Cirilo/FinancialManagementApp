@@ -1,0 +1,10 @@
+canvas {
+    display: block;
+    width: 90%;
+    height: 50px; /* Ajuste conforme necessário */
+    margin-top: -1rem;
+  }
+
+.container-fluid{
+  overflow: auto;
+}  

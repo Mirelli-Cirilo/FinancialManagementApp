@@ -1,0 +1,11 @@
+<div class="dropdown ms-4">
+    <button class="btn btn-link dropdown-toggle p-0 d-flex align-items-center" type="button" id="userMenu" data-bs-toggle="dropdown" aria-expanded="false"  style="text-decoration: none; color: inherit;">
+      <img *ngIf="auth.user$ | async as user" [src]="user.picture" alt="User Profile" class="rounded-circle" width="30" height="30">
+      <span *ngIf="inSidebar" class="ms-2 no-underline">Profile</span> <!-- Texto ao lado da imagem -->
+    </button>
+    <ul class="dropdown-menu mt-2" aria-labelledby="userMenu">
+      <li>
+        <button class="dropdown-item text-warning fw-bold" (click)="logout()">Logout</button>
+      </li>
+    </ul>
+  </div>

@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Remove rolagem global */
+}
+
+.container-fluid {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden; /* Impede rolagem horizontal */
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  overflow: hidden; /* Impede rolagem horizontal */
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto; /* Permite rolar o conteúdo do sidebar verticalmente */
+  background-color: #f8f9fa; /* Cor de fundo opcional */
+  border-right: 1px solid #dee2e6; /* Linha de separação opcional */
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Permite rolar o conteúdo do main verticalmente */
+
+  box-sizing: border-box; /* Inclui o padding na largura total */
+  overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
+@media (min-width: 768px) {
+  .d-none.d-md-block {
+    display: block;
+  }
+}

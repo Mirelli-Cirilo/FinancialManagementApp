@@ -1,0 +1,43 @@
+<div class="sidebar">
+  <nav class="shadow-sm border vh-100">
+    <div class="position-sticky ">
+        <div class="p-3">
+            <svg id="logo-38" width="90" height="30" viewBox="0 0 150 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z" class="ccustom" fill="#FF7A00"></path> <path d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z" class="ccompli1" fill="#FF9736"></path> <path d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z" class="ccompli2" fill="#FFBC7D"></path> </svg>
+        </div>
+        
+      <ul class="nav flex-column mt-3">
+        <li class="nav-item d-flex align-items-center ms-4 p-2">
+          <i class="fa-solid fa-chart-line fa-2x"></i>
+          <a class="nav-link ms-2" aria-current="page" href="/dashboard/allDashboard">
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item d-flex align-items-center ms-4 p-2">
+          <i class="fa-solid fa-piggy-bank fa-2x"></i>
+          <a class="nav-link ms-2" href="/dashboard/budgets">
+            Budgets
+          </a>
+        </li>
+        <li class="nav-item d-flex align-items-center ms-4 p-2">
+          <i class="fa-solid fa-money-check-dollar fa-2x"></i>
+          <a class="nav-link ms-2" href="#">
+            Transactions
+          </a>
+        </li>
+        <li class="nav-item d-flex align-items-center ms-4 p-2">
+          <i class="fa-solid fa-circle-up fa-2x"></i>
+          <a class="nav-link ms-2" href="#">
+            Upgrade
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div style="margin-bottom: 2rem; margin-top: 12rem;">
+      <app-user-button [inSidebar]="true"></app-user-button>
+    </div>
+      
+    
+    
+  </nav>
+</div>

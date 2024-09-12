@@ -1,16 +1,9 @@
-<div class="container">
-  <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
-    <h2 class="form-signin-heading">Login</h2>
-      <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username or password.</div>
-      <br/>
-      <label for="username" class="sr-only">Email address</label>
-      <input type="email" id="username" name="username" [(ngModel)]="credentials.username" 
-        class="form-control" placeholder="User Name" required>
-      <br/>
-      <label for="password" class="sr-only">Password</label>
-      <input type="password" id="password" name="password" [(ngModel)]="credentials.password" 
-        class="form-control" placeholder="Password" required>
-      <br/>
-      <button class="btn btn-lg btn-primary" type="submit" [disabled]="!loginForm.valid">Log in</button>
-  </form>
+<div *ngIf="auth.isAuthenticated$ | async; else notLoggedIn">
+  <!-- Mostra a foto do usuário se ele estiver logado -->
+  <app-user-button></app-user-button>
 </div>
+
+<ng-template #notLoggedIn>
+  <!-- Exibe o botão de login se o usuário não estiver logado -->
+  <button class="btn btn-primary" (click)="auth.loginWithPopup()">Login</button>
+</ng-template>

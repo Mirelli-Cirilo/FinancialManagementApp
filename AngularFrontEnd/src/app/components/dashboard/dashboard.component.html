@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-auto col-lg-2 p-0 d-none d-md-block">
+      <app-side-nav></app-side-nav>
+    </div>
+    
+    <!-- Dashboard -->
+    <main  class="col-12 col-md-9 ms-sm-auto col-lg-10 px-md-4 vh-100">
+      <app-dashboardheader></app-dashboardheader>
+      <div class="">
+        <router-outlet></router-outlet>
+      </div>
+      
+    </main>
+  </div>
+</div>

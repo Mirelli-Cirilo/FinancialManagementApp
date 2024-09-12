@@ -1,0 +1,17 @@
+.border-dashed {
+    border-style: dashed;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.custom-field {
+    width: 400px; /* Ajuste para o valor desejado */
+    margin-left: 20px;
+  }
+
+.custom-input {
+    height: 50px; /* Ajuste para o valor desejado */
+    padding: 0 10px; /* Ajuste o padding se necessário */
+  }

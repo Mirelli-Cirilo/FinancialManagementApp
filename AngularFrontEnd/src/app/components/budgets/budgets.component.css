@@ -1,0 +1,31 @@
+.budget-card {
+    
+    border-radius: 2rem;
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.1s ease;
+  }
+
+.budget-card:hover {
+    box-shadow: 5px 8px 8px rgba(88, 86, 75, 0.2);
+  cursor: pointer;
+  }
+
+  .budget-card .card {
+    border-radius: 0.25rem; /* Ajusta o raio dos cantos do card */
+  }
+  
+  .budget-card .card-body {
+    padding: 1rem; /* Ajusta o padding interno do card */
+  }
+  
+  .budget-card .progress {
+    border-radius: 0.25rem; /* Ajusta o raio dos cantos da barra de progresso */
+    overflow: hidden; /* Garante que a barra de progresso não saia do card */
+  }
+  
+  .budget-card .progress-bar {
+    transition: width 0.6s ease; /* Adiciona uma transição suave ao progresso */
+  }
+
+  

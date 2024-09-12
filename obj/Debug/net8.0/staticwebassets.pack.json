@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FinancialManagementApp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FinancialManagementApp.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\mirel\\Financeiro\\FinancialManagementApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
