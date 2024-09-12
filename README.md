@@ -26,7 +26,6 @@ Swagger para documentação da API. Para autenticação de usuário está sendo 
 
 ### Backend
 - ASP.NET Core
-- Identity Framework
 - Entity Framework
 - Swagger
 
