@@ -10,14 +10,17 @@ Swagger para documentação da API.
 ### Home
 ![Adicionar Transação](images/home.png)
 
-### Adicionar Transação
-![Adicionar Transação](images/cadastro.png)
-
-### Detalhes Transação
-![Adicionar Transação](images/detalhes.png)
+### Auth
+![Auth](images/auth.png)
 
 ### Dashboard
 ![Dashboard](images/dashboard.png)
+
+### Budgets
+![Budgets](images/budgets.png)
+
+### Transactions
+![Transactions](images/transacoes.png)
 
 ## Tecnologias Utilizadas
 
