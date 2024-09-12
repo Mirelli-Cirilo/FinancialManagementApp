@@ -2,8 +2,8 @@
 
 ## Descrição
 Este projeto é um aplicativo fullstack para gerenciamento financeiro. Ele inclui funcionalidades de CRUD para transações e orçamentos, além de um dashboard interativo.
-O backend é desenvolvido em ASP.NET com Identity Framework e Entity Framework. O frontend é desenvolvido em Angular e utiliza Angular Material, Chart.js para gráficos e 
-Swagger para documentação da API.
+O backend é desenvolvido em C# com ASP.NET e Entity Framework. O frontend é desenvolvido em Angular e utiliza Angular Material, Chart.js para gráficos e 
+Swagger para documentação da API. Para autenticação de usuário está sendo utilizado o auth0.
 
 ## Demonstração
 
