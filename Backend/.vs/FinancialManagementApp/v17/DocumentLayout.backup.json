@@ -1,0 +1,225 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Financeiro\\FinancialManagementApp\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|d:\\financeiro\\financialmanagementapp\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E98817-C38D-4BE4-AA22-835900A6BDAE}|..\\FinancialManagement.Tests\\FinancialManagement.Tests.csproj|d:\\financeiro\\financialmanagementapp\\financialmanagement.tests\\service\\financialmanagementservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E98817-C38D-4BE4-AA22-835900A6BDAE}|..\\FinancialManagement.Tests\\FinancialManagement.Tests.csproj|d:\\financeiro\\financialmanagementapp\\financialmanagement.tests\\financialmanagement.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|d:\\financeiro\\financialmanagementapp\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|d:\\financeiro\\financialmanagementapp\\backend\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|d:\\financeiro\\financialmanagementapp\\backend\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|solutionrelative:services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|d:\\financeiro\\financialmanagementapp\\backend\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|solutionrelative:models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|d:\\financeiro\\financialmanagementapp\\backend\\services\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|solutionrelative:services\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|d:\\financeiro\\financialmanagementapp\\backend\\models\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|solutionrelative:models\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E98817-C38D-4BE4-AA22-835900A6BDAE}|..\\FinancialManagement.Tests\\FinancialManagement.Tests.csproj|d:\\financeiro\\financialmanagementapp\\financialmanagement.tests\\controller\\budgetcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|d:\\financeiro\\financialmanagementapp\\backend\\controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|solutionrelative:controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|d:\\financeiro\\financialmanagementapp\\backend\\services\\interfaces\\ibudgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|solutionrelative:services\\interfaces\\ibudgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 202,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T18:41:59.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T18:40:46.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowAoAAACvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-09T18:40:04.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "Services\\TransactionService.cs",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Services\\TransactionService.cs",
+              "RelativeToolTip": "Services\\TransactionService.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAcwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T20:03:15.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Budget.cs",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Models\\Budget.cs",
+              "RelativeDocumentMoniker": "Models\\Budget.cs",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Models\\Budget.cs",
+              "RelativeToolTip": "Models\\Budget.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T19:45:57.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "Models\\Transaction.cs",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Models\\Transaction.cs",
+              "RelativeToolTip": "Models\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T19:45:56.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FinancialManagementServiceTests.cs",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\FinancialManagement.Tests\\Service\\FinancialManagementServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\FinancialManagement.Tests\\Service\\FinancialManagementServiceTests.cs",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\FinancialManagement.Tests\\Service\\FinancialManagementServiceTests.cs",
+              "RelativeToolTip": "..\\FinancialManagement.Tests\\Service\\FinancialManagementServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T19:27:19.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FinancialManagement.Tests.csproj",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\FinancialManagement.Tests\\FinancialManagement.Tests.csproj",
+              "RelativeDocumentMoniker": "..\\FinancialManagement.Tests\\FinancialManagement.Tests.csproj",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\FinancialManagement.Tests\\FinancialManagement.Tests.csproj",
+              "RelativeToolTip": "..\\FinancialManagement.Tests\\FinancialManagement.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-08T19:20:25.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BudgetControllerTests.cs",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\FinancialManagement.Tests\\Controller\\BudgetControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\FinancialManagement.Tests\\Controller\\BudgetControllerTests.cs",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\FinancialManagement.Tests\\Controller\\BudgetControllerTests.cs",
+              "RelativeToolTip": "..\\FinancialManagement.Tests\\Controller\\BudgetControllerTests.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwCEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T03:19:14.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BudgetService.cs",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Services\\BudgetService.cs",
+              "RelativeDocumentMoniker": "Services\\BudgetService.cs",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Services\\BudgetService.cs",
+              "RelativeToolTip": "Services\\BudgetService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwD0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T03:10:42.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IBudgetService.cs",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Services\\Interfaces\\IBudgetService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IBudgetService.cs",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Services\\Interfaces\\IBudgetService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IBudgetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T03:08:52.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BudgetController.cs",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Controllers\\BudgetController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BudgetController.cs",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Controllers\\BudgetController.cs",
+              "RelativeToolTip": "Controllers\\BudgetController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwBUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T03:08:42.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
