@@ -8,7 +8,7 @@ Swagger para documentação da API. Para autenticação de usuário está sendo 
 ## Demonstração
 
 ### Home
-![Adicionar Transação](images/home.png)
+![Adicionar Transação](AngularFrontEnd/images/home.png)
 
 ### Auth
 ![Auth](images/auth.png)
