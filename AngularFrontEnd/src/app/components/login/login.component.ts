@@ -12,9 +12,15 @@ export class LoginComponent implements OnInit {
   constructor(public auth: AuthService, private router: Router) {}
 
   ngOnInit() {
-    this.auth.getAccessTokenSilently().subscribe(token => {
-      localStorage.setItem('id_token', token);
-      console.log(token);
+    this.auth.getAccessTokenSilently().subscribe({
+      next: (token) => {
+        localStorage.setItem('id_token', token);
+        console.log('Token:', token);
+        this.router.navigate(["/dashboard"]);
+      },
+      error: (err) => {
+        console.error('Erro ao obter o token:', err);
+      }
     });
   }
 }

@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class BudgetService {
 
-  private apiUrl = 'https://localhost:5001/api/Budget';  // Substitua pela URL da sua API
+  private apiUrl = 'http://localhost:5000/api/budget';  // Substitua pela URL da sua API
 
   constructor(private http: HttpClient) { }
 
@@ -16,7 +16,10 @@ export class BudgetService {
   }
 
   getBudget(): Observable<any> {
-    return this.http.get(this.apiUrl);
+    const token = localStorage.getItem('id_token');
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+
+    return this.http.get(this.apiUrl, { headers });
   }
 
   getBudgetById(id: string): Observable<any> {

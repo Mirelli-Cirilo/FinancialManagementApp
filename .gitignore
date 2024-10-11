@@ -7,3 +7,4 @@ obj/
 *.pdb
 /node_modules/
 .vscode/
+Backend/wwwroot/lib/

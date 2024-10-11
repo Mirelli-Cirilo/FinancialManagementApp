@@ -27,6 +27,7 @@ export class AddTransactionsComponent {
         ...form.value,
         userId: this.userId,
         budgetId: this.budget.id,
+        budget: this.budget 
       };
   
       console.log('Transaction Data:', transactionData); // Verifique os dados aqui

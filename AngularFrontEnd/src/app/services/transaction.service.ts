@@ -9,7 +9,7 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class TransactionService {
 
-  private apiUrl = 'https://localhost:5001/api/transaction';
+  private apiUrl = 'http://localhost:5000/api/transaction';
   constructor(private httpClient: HttpClient, private auth: AuthService) { }
 
   getTransactions() : Observable<Transaction[]> {
@@ -21,7 +21,7 @@ export class TransactionService {
 
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
 
-    return this.httpClient.get<Transaction[]>('https://localhost:5001/api/transaction', { headers });
+    return this.httpClient.get<Transaction[]>('http://localhost:5000/api/transaction', { headers });
   }
 
   getTransactionId(id: number) : Observable<Transaction> {

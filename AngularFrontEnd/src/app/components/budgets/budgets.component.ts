@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { BudgetService } from '../../services/budget.service';
 
@@ -12,7 +12,7 @@ export class BudgetsComponent implements OnInit {
   budgets: any[] = [];
 
 
-  private apiUrl = 'https://localhost:5001/api/Budget/budgetExist';  // URL do endpoint
+  private apiUrl = 'http://localhost:5000/api/budget/budgetExist';  // URL do endpoint
 
   constructor(private http: HttpClient, private budgetService: BudgetService) { }
 
@@ -21,8 +21,14 @@ export class BudgetsComponent implements OnInit {
   }
 
   checkBudget(): void {
-    this.http.get<boolean>(this.apiUrl).subscribe({
+    const token = localStorage.getItem('id_token'); // Obtenha o token do localStorage
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}` // Adicione o header de autorização
+    });
+
+    this.http.get<boolean>(this.apiUrl, { headers }).subscribe({
       next: (result: boolean) => {
+        console.log(result);
         this.budgetExist = result;
         if (this.budgetExist) {
           this.getBudgets();

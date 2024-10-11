@@ -24,27 +24,28 @@ export class TransactionsComponent implements OnInit {
     
     if (this.budgetId) {
       this.getBudgetDetails(this.budgetId);
-      this.getTransactions();
+     
     }
   }
 
   getTransactions(): void {
     this.transactionService.getTransactions().subscribe({
       next: (data: any[]) => {
-        // Filtra as transações pelo budgetId
-        this.transactions = data.filter(transaction => transaction.budgetId.toString() === this.budgetId);
+        
+        this.transactions = data.filter(transaction => transaction.budgetId?.toString() === this.budgetId);
+        console.log('Transações filtradas:', this.transactions);
       },
       error: (err) => {
         console.error('Erro ao obter transações:', err);
-      }
-    });
+      } });
   }
 
   getBudgetDetails(id: string): void {
     this.budgetService.getBudgetById(id).subscribe(
       (data) => {
+        console.log(data);
         this.budget = data;
-        console.log(this.budget);
+        this.getTransactions();
       },
       (error) => {
         console.error('Erro ao recuperar os detalhes do budget', error);

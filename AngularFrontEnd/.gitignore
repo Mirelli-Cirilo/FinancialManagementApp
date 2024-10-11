@@ -8,6 +8,7 @@
 
 # Node
 /node_modules/
+Backend/wwwroot/lib/
 npm-debug.log
 yarn-error.log
 
