@@ -11,16 +11,16 @@ Swagger para documentação da API. Para autenticação de usuário está sendo 
 ![Adicionar Transação](AngularFrontEnd/images/home.png)
 
 ### Auth
-![Auth](images/auth.png)
+![Auth](AngularFrontEnd/images/auth.png)
 
 ### Dashboard
-![Dashboard](images/dashboard.png)
+![Dashboard](AngularFrontEnd/images/dashboard.png)
 
 ### Budgets
-![Budgets](images/budgets.png)
+![Budgets](AngularFrontEnd/images/budgets.png)
 
 ### Transactions
-![Transactions](images/transacoes.png)
+![Transactions](AngularFrontEnd/images/transacoes.png)
 
 ## Tecnologias Utilizadas
 
