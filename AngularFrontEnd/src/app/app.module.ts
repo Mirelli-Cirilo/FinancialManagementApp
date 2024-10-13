@@ -21,7 +21,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { AuthModule } from '@auth0/auth0-angular';
-import { AuthHttpInterceptor } from '@auth0/auth0-angular';
+import { AuthHttpInterceptor } from '@auth0/auth0-angular'; 
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { UserButtonComponent } from './components/user-button/user-button.component';
 import { DashboardheaderComponent } from './components/dashboardheader/dashboardheader.component';
@@ -98,8 +98,8 @@ export function tokenGetter() {
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
-        allowedDomains: ["localhost:5001"], // Adicione os domínios permitidos
-        disallowedRoutes: [""], // Adicione as rotas não permitidas
+        allowedDomains: ["localhost:5001"], 
+        disallowedRoutes: [""],
       }
     })
   ],
