@@ -75,7 +75,7 @@ export function tokenGetter() {
     MatTableModule,
     MatDialogModule,
     AuthModule.forRoot({
-      domain:'https://dev-tomuar4vp6ixaauc.us.auth0.com',
+      domain:'dev-tomuar4vp6ixaauc.us.auth0.com',
       clientId:'ETOIsk9WpGtn1JGosCE276A5hPprFuJG',
       authorizationParams: {
         audience: 'https://financialapi.com',
