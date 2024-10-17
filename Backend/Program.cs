@@ -30,8 +30,8 @@ builder.Services.AddAuthentication(options =>
             options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
         }).AddJwtBearer(options =>
         {
-            options.Authority = "";
-            options.Audience = "";
+            options.Authority = "https://dev-8zkc8t7vubcg2qoe.us.auth0.com";
+            options.Audience = "https://financialapi.com";
         });
 
        

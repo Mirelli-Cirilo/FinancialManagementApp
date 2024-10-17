@@ -75,8 +75,8 @@ export function tokenGetter() {
     MatTableModule,
     MatDialogModule,
     AuthModule.forRoot({
-      domain:'https://dev-8zkc8t7vubcg2qoe.us.auth0.com',
-      clientId:'XMp1HvRA5Fd65sChBkfKAyuLcoeV4E1g',
+      domain:'https://dev-tomuar4vp6ixaauc.us.auth0.com',
+      clientId:'ETOIsk9WpGtn1JGosCE276A5hPprFuJG',
       authorizationParams: {
         audience: 'https://financialapi.com',
         redirect_uri: window.location.origin,
@@ -85,7 +85,7 @@ export function tokenGetter() {
       httpInterceptor:{
         allowedList:[
           {
-            uri: "https://localhost:5001/api/*",
+            uri: "http://localhost:5001/api/*",
             tokenOptions: {
               authorizationParams: {
               audience: 'https://financialapi.com'
