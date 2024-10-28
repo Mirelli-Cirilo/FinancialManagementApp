@@ -15,7 +15,7 @@ builder.Services.AddCors(opt =>
 {
     opt.AddPolicy("CorsPolicy", policyBuilder =>
     {
-        policyBuilder.WithOrigins("https://financial-management-app-beta.vercel.app")
+        policyBuilder.WithOrigins("https://financial-management-app-beta.vercel.app/")
         .AllowAnyMethod()
         .AllowAnyHeader()
         .AllowCredentials(); 
@@ -31,7 +31,7 @@ builder.Services.AddAuthentication(options =>
             options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
         }).AddJwtBearer(options =>
         {
-            options.Authority = "https://dev-8zkc8t7vubcg2qoe.us.auth0.com";
+            options.Authority = "https://dev-tomuar4vp6ixaauc.us.auth0.com";
             options.Audience = "https://financialapi.com";
         });
 
