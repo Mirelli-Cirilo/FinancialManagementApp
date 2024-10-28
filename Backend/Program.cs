@@ -15,9 +15,10 @@ builder.Services.AddCors(opt =>
 {
     opt.AddPolicy("CorsPolicy", policyBuilder =>
     {
-        policyBuilder.AllowAnyHeader()
+        policyBuilder.WithOrigins("https://financial-management-app-beta.vercel.app")
         .AllowAnyMethod()
-        .AllowAnyOrigin();
+        .AllowAnyHeader()
+        .AllowCredentials(); 
     });
 });
 
