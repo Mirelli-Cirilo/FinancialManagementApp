@@ -85,7 +85,7 @@ export function tokenGetter() {
       httpInterceptor:{
         allowedList:[
           {
-            uri: "http://localhost:5001/api/*",
+            uri: "https://financialmanagementapp.onrender.com/api/*",
             tokenOptions: {
               authorizationParams: {
               audience: 'https://financialapi.com'
@@ -98,7 +98,7 @@ export function tokenGetter() {
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
-        allowedDomains: ["localhost:5001"], 
+        allowedDomains: ["https://financialmanagementapp.onrender.com"], 
         disallowedRoutes: [""],
       }
     })

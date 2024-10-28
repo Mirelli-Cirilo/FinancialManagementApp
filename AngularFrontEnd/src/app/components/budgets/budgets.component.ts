@@ -12,7 +12,7 @@ export class BudgetsComponent implements OnInit {
   budgets: any[] = [];
 
 
-  private apiUrl = 'http://localhost:5000/api/budget/budgetExist';  // URL do endpoint
+  private apiUrl = 'https://financialmanagementapp.onrender.com/api/budget/budgetExist';  // URL do endpoint
 
   constructor(private http: HttpClient, private budgetService: BudgetService) { }
 

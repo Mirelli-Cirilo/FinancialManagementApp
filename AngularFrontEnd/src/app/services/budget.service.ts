@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class BudgetService {
 
-  private apiUrl = 'http://localhost:5000/api/budget';  // Substitua pela URL da sua API
+  private apiUrl = 'https://financialmanagementapp.onrender.com/api/budget';  // Substitua pela URL da sua API
 
   constructor(private http: HttpClient) { }
 

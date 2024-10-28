@@ -16,7 +16,7 @@ export class AppComponent {
   ngOnInit() {
     this.auth.isAuthenticated$.subscribe(isAuthenticated => {
       if (isAuthenticated) {
-        
+        this.router.navigate(["/dashboard/budgets"]);
       }
     });
   }
