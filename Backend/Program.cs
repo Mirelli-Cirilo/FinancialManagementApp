@@ -14,11 +14,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(opt =>
 {
     opt.AddPolicy("CorsPolicy", policyBuilder =>
-    {
+    
      policyBuilder.WithOrigins("https://financial-management-app-beta.vercel.app")
                       .AllowAnyHeader()
                       .AllowAnyMethod());
-}
+
 });
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
