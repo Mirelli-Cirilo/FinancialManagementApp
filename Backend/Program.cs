@@ -3,7 +3,7 @@ using FinancialManagementApp.Data;
 using FinancialManagementApp.Services.Interfaces;
 using FinancialManagementApp.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using DotNetEnv();
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,17 +24,20 @@ builder.Services.AddCors(opt =>
 
 });
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Obtém a senha a partir da variável de ambiente
-var password = Environment.GetEnvironmentVariable("DATABASE_KEY");
+var password = Environment.GetEnvironmentVariable("DATABASE_PASSWORD");
 
 if (!string.IsNullOrEmpty(password))
 {
     // Substitui o marcador pela senha da variável de ambiente
     connectionString = connectionString.Replace("REPLACE_WITH_ENV_VAR", password);
 }
+
+// Registra o DbContext com a string de conexão modificada
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(connectionString));
 
 builder.Services.AddAuthentication(options =>
         {
