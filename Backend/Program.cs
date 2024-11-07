@@ -24,20 +24,8 @@ builder.Services.AddCors(opt =>
 
 });
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-// Obtém a senha a partir da variável de ambiente
-var password = Environment.GetEnvironmentVariable("DATABASE_PASSWORD");
-
-if (!string.IsNullOrEmpty(password))
-{
-    // Substitui o marcador pela senha da variável de ambiente
-    connectionString = connectionString.Replace("REPLACE_WITH_ENV_VAR", password);
-}
-
-// Registra o DbContext com a string de conexão modificada
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(connectionString));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddAuthentication(options =>
         {

@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|d:\\financeiro\\financialmanagementapp\\backend\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9783EECD-E4B7-4B9F-98D7-E3DA90C76F7F}|FinancialManagementApp.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{08E98817-C38D-4BE4-AA22-835900A6BDAE}|..\\FinancialManagement.Tests\\FinancialManagement.Tests.csproj|d:\\financeiro\\financialmanagementapp\\financialmanagement.tests\\service\\financialmanagementservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -55,8 +59,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 202,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".env",
+              "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-07T19:55:10.383Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -65,14 +82,14 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T18:41:59.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -80,8 +97,7 @@
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T18:40:46.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T18:40:46.507Z"
             },
             {
               "$type": "Document",
@@ -91,14 +107,14 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "D:\\Financeiro\\FinancialManagementApp\\Backend\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowAoAAACvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-09T18:40:04.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TransactionService.cs",
               "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Services\\TransactionService.cs",
               "RelativeDocumentMoniker": "Services\\TransactionService.cs",
@@ -106,12 +122,11 @@
               "RelativeToolTip": "Services\\TransactionService.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAcwD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T20:03:15.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T20:03:15.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Budget.cs",
               "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Models\\Budget.cs",
               "RelativeDocumentMoniker": "Models\\Budget.cs",
@@ -119,12 +134,11 @@
               "RelativeToolTip": "Models\\Budget.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T19:45:57.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T19:45:57.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Transaction.cs",
               "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Models\\Transaction.cs",
               "RelativeDocumentMoniker": "Models\\Transaction.cs",
@@ -132,12 +146,11 @@
               "RelativeToolTip": "Models\\Transaction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T19:45:56.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T19:45:56.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FinancialManagementServiceTests.cs",
               "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\FinancialManagement.Tests\\Service\\FinancialManagementServiceTests.cs",
               "RelativeDocumentMoniker": "..\\FinancialManagement.Tests\\Service\\FinancialManagementServiceTests.cs",
@@ -145,12 +158,11 @@
               "RelativeToolTip": "..\\FinancialManagement.Tests\\Service\\FinancialManagementServiceTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T19:27:19.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T19:27:19.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FinancialManagement.Tests.csproj",
               "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\FinancialManagement.Tests\\FinancialManagement.Tests.csproj",
               "RelativeDocumentMoniker": "..\\FinancialManagement.Tests\\FinancialManagement.Tests.csproj",
@@ -158,12 +170,11 @@
               "RelativeToolTip": "..\\FinancialManagement.Tests\\FinancialManagement.Tests.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-08T19:20:25.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T19:20:25.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "BudgetControllerTests.cs",
               "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\FinancialManagement.Tests\\Controller\\BudgetControllerTests.cs",
               "RelativeDocumentMoniker": "..\\FinancialManagement.Tests\\Controller\\BudgetControllerTests.cs",
@@ -171,12 +182,11 @@
               "RelativeToolTip": "..\\FinancialManagement.Tests\\Controller\\BudgetControllerTests.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAQwCEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T03:19:14.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T03:19:14.049Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "BudgetService.cs",
               "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Services\\BudgetService.cs",
               "RelativeDocumentMoniker": "Services\\BudgetService.cs",
@@ -184,12 +194,11 @@
               "RelativeToolTip": "Services\\BudgetService.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAwwD0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T03:10:42.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T03:10:42.393Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "IBudgetService.cs",
               "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Services\\Interfaces\\IBudgetService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\IBudgetService.cs",
@@ -197,12 +206,11 @@
               "RelativeToolTip": "Services\\Interfaces\\IBudgetService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T03:08:52.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T03:08:52.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "BudgetController.cs",
               "DocumentMoniker": "D:\\Financeiro\\FinancialManagementApp\\Backend\\Controllers\\BudgetController.cs",
               "RelativeDocumentMoniker": "Controllers\\BudgetController.cs",
@@ -210,8 +218,7 @@
               "RelativeToolTip": "Controllers\\BudgetController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAYwBUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T03:08:42.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T03:08:42.602Z"
             }
           ]
         }
