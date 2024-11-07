@@ -25,7 +25,7 @@ builder.Services.AddCors(opt =>
 });
 
 
-var connectionString = Configuration.GetConnectionString("DefaultConnection")
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
             .Replace("__DATABASE_KEY__", Environment.GetEnvironmentVariable("DATABASE_KEY"));
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
