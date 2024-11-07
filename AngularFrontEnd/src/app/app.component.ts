@@ -8,15 +8,17 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'AngularFrontEnd';
+  private hasRedirected = false;  
 
-  constructor(public auth: AuthService, private router: Router) {}
+  constructor(public auth: AuthService, private router: Router) { }
 
   ngOnInit() {
     this.auth.isAuthenticated$.subscribe(isAuthenticated => {
-      if (isAuthenticated) {
+      if (isAuthenticated && !this.hasRedirected) {
         this.router.navigate(["/dashboard/budgets"]);
+        this.hasRedirected = true; 
       }
     });
   }
